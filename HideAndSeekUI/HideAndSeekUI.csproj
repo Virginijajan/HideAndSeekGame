@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="compass.jpg" />
+    <None Remove="house.jfif" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HideAndSeek\HideAndSeek.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="compass.jpg" />
+    <Resource Include="house.jfif" />
+  </ItemGroup>
+
+</Project>
